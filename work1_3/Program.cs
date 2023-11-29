@@ -6,17 +6,17 @@ class Program
 {
     static void Main()
     {
-        // Создаем массив из 10 целых чисел
+        // Создаю массив из 10 целых чисел
         int[] array = new int[10];
 
-        // Заполняем массив случайными целыми числами от 1 до 100
+        // Заполняю массив случайными целыми числами от 1 до 100
         Random random = new Random();
         for (int i = 0; i < array.Length; i++)
         {
             array[i] = random.Next(1, 101);
         }
 
-        // Выводим массив на экран
+        // Вывожу массив на экран
         Console.WriteLine("Массив:");
         foreach (int number in array)
         {
@@ -24,7 +24,7 @@ class Program
         }
         Console.WriteLine();
 
-        // Находим количество элементов в отрезке [20, 90]
+        // Нахожу количество элементов в отрезке [20, 90]
         int count = 0;
         foreach (int number in array)
         {
@@ -34,10 +34,10 @@ class Program
             }
         }
 
-       
-        Console.WriteLine($"Количество элементов в отрезке [20, 90]: => {count}");
+        // Вывожу результат
+        Console.WriteLine($"Количество элементов в отрезке [20, 90]: {count}");
 
-        
-                Console.ReadKey();
+       
+        Console.ReadKey();
     }
 }
